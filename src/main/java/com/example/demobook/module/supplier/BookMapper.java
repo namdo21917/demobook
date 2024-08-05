@@ -11,8 +11,7 @@ import com.example.demobook.module.supplier.dto.response.*;
 public interface BookMapper {
     BookEntity fromBookInsertRequest(BookInsertRequest bookInsertRequest);
 
-    BookEntity fromBookUpdateRequest(
-            BookUpdateRequest bookUpdateRequest, @MappingTarget BookEntity entity);
+    BookEntity fromBookUpdateRequest(BookUpdateRequest bookUpdateRequest, @MappingTarget BookEntity entity);
 
     BookInsertRequest toBookInsertRequest(BookEntity entity);
 

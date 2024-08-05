@@ -10,10 +10,6 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BookUpdateRequest {
     String id;
-    String appId;
     String name;
-    String address;
-    String tel;
-    String email;
-    String description;
+    String author;
 }

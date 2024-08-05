@@ -11,13 +11,8 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BookInsertResponse {
-    String id;
-    String appId;
     String name;
-    String address;
-    String tel;
-    String email;
-    String description;
+    String author;
 
     Instant createdAt;
     String createdBy;

@@ -9,10 +9,6 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BookCreateRequest {
-    String appId;
     String name;
-    String address;
-    String tel;
-    String email;
-    String description;
+    String author;
 }

@@ -10,7 +10,6 @@ import com.example.demobook.module.base.Constants;
 import com.example.demobook.module.base.dto.request.FilterRequest;
 import com.example.demobook.module.base.dto.response.ApiResponse;
 import com.example.demobook.module.base.dto.response.PageResponse;
-import com.example.demobook.module.base.dto.response.fe.FEResponse;
 import com.example.demobook.module.supplier.dto.request.BookInsertRequest;
 import com.example.demobook.module.supplier.dto.request.BookUpdateRequest;
 import com.example.demobook.module.supplier.dto.response.*;
@@ -24,11 +23,6 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class BookController {
     BookService bookService;
-
-    @GetMapping("/books/fe")
-    ApiResponse<FEResponse> fe() {
-        return ApiResponse.<FEResponse>builder().data(bookService.fe()).build();
-    }
 
     @GetMapping("/books/index")
     ApiResponse<PageResponse<BookResponse>> index(
@@ -73,8 +67,7 @@ public class BookController {
     }
 
     @PostMapping("/books/bulk")
-    ApiResponse<List<BookInsertResponse>> bulkInsert(
-            @RequestBody @Valid List<BookInsertRequest> bookInsertRequests) {
+    ApiResponse<List<BookInsertResponse>> bulkInsert(@RequestBody @Valid List<BookInsertRequest> bookInsertRequests) {
         return ApiResponse.<List<BookInsertResponse>>builder()
                 .data(bookService.bulkInsert(bookInsertRequests))
                 .build();
