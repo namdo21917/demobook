@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier;
+package com.example.demobook.module.book;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import com.example.demobook.module.base.Constants;
 import com.example.demobook.module.base.dto.request.FilterRequest;
 import com.example.demobook.module.base.dto.response.ApiResponse;
 import com.example.demobook.module.base.dto.response.PageResponse;
-import com.example.demobook.module.supplier.dto.request.BookInsertRequest;
-import com.example.demobook.module.supplier.dto.request.BookUpdateRequest;
-import com.example.demobook.module.supplier.dto.response.*;
+import com.example.demobook.module.book.dto.request.BookInsertRequest;
+import com.example.demobook.module.book.dto.request.BookUpdateRequest;
+import com.example.demobook.module.book.dto.response.*;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

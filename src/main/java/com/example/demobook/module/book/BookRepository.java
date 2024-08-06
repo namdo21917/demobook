@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier;
+package com.example.demobook.module.book;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

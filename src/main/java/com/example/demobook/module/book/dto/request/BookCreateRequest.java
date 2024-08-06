@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier.dto.request;
+package com.example.demobook.module.book.dto.request;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -8,7 +8,9 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class BookInsertRequest {
+public class BookCreateRequest {
     String name;
     String author;
+    Integer volume;
+    String category;
 }

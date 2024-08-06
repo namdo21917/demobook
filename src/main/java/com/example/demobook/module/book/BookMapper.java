@@ -1,11 +1,11 @@
-package com.example.demobook.module.supplier;
+package com.example.demobook.module.book;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
-import com.example.demobook.module.supplier.dto.request.BookInsertRequest;
-import com.example.demobook.module.supplier.dto.request.BookUpdateRequest;
-import com.example.demobook.module.supplier.dto.response.*;
+import com.example.demobook.module.book.dto.request.BookInsertRequest;
+import com.example.demobook.module.book.dto.request.BookUpdateRequest;
+import com.example.demobook.module.book.dto.response.*;
 
 @Mapper(componentModel = "spring")
 public interface BookMapper {

@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier.dto.request;
+package com.example.demobook.module.book.dto.request;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -12,4 +12,6 @@ public class BookUpdateRequest {
     String id;
     String name;
     String author;
+    Integer volume;
+    String category;
 }

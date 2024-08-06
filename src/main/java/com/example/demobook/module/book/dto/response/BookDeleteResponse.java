@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier.dto.request;
+package com.example.demobook.module.book.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class BookCreateRequest {
+public class BookDeleteResponse {
+    String id;
     String name;
-    String author;
 }

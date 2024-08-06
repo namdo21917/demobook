@@ -1,4 +1,4 @@
-package com.example.demobook.module.supplier;
+package com.example.demobook.module.book;
 
 import jakarta.persistence.*;
 
@@ -28,4 +28,10 @@ public class BookEntity extends AuditBase {
 
     @Column(name = "author", unique = true)
     String author;
+
+    @Column(name = "volumn", unique = true)
+    Integer volume;
+
+    @Column(name = "category", unique = true)
+    String category;
 }
