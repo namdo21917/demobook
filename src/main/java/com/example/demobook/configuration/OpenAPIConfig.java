@@ -28,7 +28,7 @@ public class OpenAPIConfig {
             @Value("demobook") String title,
             @Value("demobook") String description,
             @Value("1") String version,
-            @Value("http://localhost:8080/demobook") String serverUrl) {
+            @Value("http://localhost:8080") String serverUrl) {
         return new OpenAPI()
                 .servers(List.of(new Server().url(serverUrl)))
                 .info(new Info()
