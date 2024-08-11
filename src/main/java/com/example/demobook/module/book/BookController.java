@@ -81,7 +81,7 @@ public class BookController {
     }
 
     @GetMapping("/books/bulk/edit")
-    ApiResponse<List<BookUpdateRequest>> bulkEdit(@RequestBody List<String> bookIds) {
+    ApiResponse<List<BookUpdateRequest>> bulkEdit(@RequestParam List<String> bookIds) {
         return ApiResponse.<List<BookUpdateRequest>>builder()
                 .data(bookService.bulkEdit(bookIds))
                 .build();
