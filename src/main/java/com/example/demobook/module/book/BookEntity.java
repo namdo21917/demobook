@@ -26,12 +26,12 @@ public class BookEntity extends AuditBase {
     @Column(name = "name", unique = true)
     String name;
 
-    @Column(name = "author", unique = true)
+    @Column(name = "author")
     String author;
 
-    @Column(name = "volumn", unique = true)
+    @Column(name = "volumn")
     Integer volume;
 
-    @Column(name = "category", unique = true)
+    @Column(name = "category")
     String category;
 }
